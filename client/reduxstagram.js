@@ -18,12 +18,12 @@ import store, { history } from './store';
 //IndexRoute is default route for nested routes
 const router = (
   <Provider store={store}>
-  <Router history={history}>
-    <Route path='/' component = {Main}>
-      <IndexRoute component={PhotoGrid}></IndexRoute>
-      <Route path="/view/:postId" component={Single}></Route>
-    </Route>
-  </Router>
+    <Router history={history}>
+      <Route path='/' component = {Main}>
+        <IndexRoute component={PhotoGrid}></IndexRoute>
+        <Route path="/view/:postId" component={Single}></Route>
+      </Route>
+    </Router>
   </Provider>
 )
 
