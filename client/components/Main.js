@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+// React.cloneElement() clones porps to children, making state accessible to all children
 const Main = React.createClass({
 	render() {
 		return (
